@@ -20,13 +20,13 @@
         <div class="flex justify-between mb-6">
           <button
             id="assistant-tab"
-            class="w-1/2 py-2 rounded-l-md focus:outline-none transition-colors duration-200 text-white font-semibold bg-gradient-to-r from-blue-500 to-purple-600"
+            class="w-1/2 py-2 rounded-l-md focus:outline-none transition-colors duration-1000 text-white font-semibold bg-gradient-to-r from-blue-500 to-purple-600"
           >
             Assistant
           </button>
           <button
             id="history-tab"
-            class="w-1/2 py-2 rounded-r-md focus:outline-none transition-colors duration-200 text-gray-600 font-semibold"
+            class="w-1/2 py-2 rounded-r-md focus:outline-none transition-colors duration-1000 text-gray-600 font-semibold"
           >
             History
           </button>
@@ -40,6 +40,7 @@
               >Income 💰</label
             >
             <input
+              required
               id="income"
               type="number"
               class="w-full border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
@@ -56,6 +57,7 @@
               >Software 💻</label
             >
             <input
+              required
               type="number"
               id="software"
               class="w-full border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
@@ -72,6 +74,7 @@
               >Courses 📚</label
             >
             <input
+              required
               type="number"
               id="courses"
               class="w-full border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
@@ -88,6 +91,7 @@
               >Internet 🌐</label
             >
             <input
+              required
               type="number"
               id="internet"
               class="w-full border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
@@ -198,6 +202,7 @@
     </div>
 
     <!-- Script File -->
+    <script src="./scripts/utilites.js"></script>
     <script src="./scripts/index.js"></script>
   </body>
 </html>
