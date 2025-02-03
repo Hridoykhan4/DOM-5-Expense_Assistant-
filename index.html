@@ -1,9 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale= 1.0" />
     <title>Expense Assistant</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
@@ -20,13 +25,13 @@
         <div class="flex justify-between mb-6">
           <button
             id="assistant-tab"
-            class="w-1/2 py-2 rounded-l-md focus:outline-none transition-colors duration-1000 text-white font-semibold bg-gradient-to-r from-blue-500 to-purple-600"
+            class="w-1/2 py-2 rounded-l-md focus:outline-none transition-colors duration-700 text-white font-semibold bg-gradient-to-r from-blue-500 to-purple-600"
           >
             Assistant
           </button>
           <button
             id="history-tab"
-            class="w-1/2 py-2 rounded-r-md focus:outline-none transition-colors duration-1000 text-gray-600 font-semibold"
+            class="w-1/2 py-2 rounded-r-md focus:outline-none transition-colors duration-700 text-gray-600 font-semibold"
           >
             History
           </button>
@@ -36,7 +41,9 @@
         <div id="expense-form" class="grid grid-cols-2 gap-4">
           <!-- Income -->
           <div class="relative col-span-2">
-            <label class="block font-semibold mb-2 text-gray-700"
+            <label
+              class="block font-semibold mb-2 text-gray-700 cursor-pointer"
+              for="income"
               >Income 💰</label
             >
             <input
@@ -70,7 +77,9 @@
 
           <!-- Courses/Books -->
           <div class="relative">
-            <label class="block font-semibold mb-2 text-gray-700"
+            <label
+              class="block font-semibold mb-2 text-gray-700 cursor-pointer"
+              for="courses"
               >Courses 📚</label
             >
             <input
@@ -87,7 +96,9 @@
 
           <!-- Internet -->
           <div class="relative">
-            <label class="block font-semibold mb-2 text-gray-700"
+            <label
+              class="block font-semibold mb-2 text-gray-700 cursor-pointer"
+              for="internet"
               >Internet 🌐</label
             >
             <input
@@ -105,14 +116,16 @@
           <!-- Calculate Button -->
           <button
             id="calculate"
-            class="col-span-2 text-white px-4 py-2 rounded-md font-semibold text-sm transition-all duration-200 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 focus:ring-blue-500"
+            class="col-span-2 text-white px-4 py-2 rounded-md font-semibold text-sm transition-all duration-200 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 focus:ring-blue-500 btn"
           >
             Calculate
           </button>
 
           <!-- Savings -->
           <div class="relative col-span-2">
-            <label class="block font-semibold mb-2 text-gray-700"
+            <label
+              class="block font-semibold mb-2 text-gray-700 cursor-pointer"
+              for="savings"
               >Savings (%) 💸</label
             >
             <input
